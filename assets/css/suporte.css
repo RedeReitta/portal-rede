@@ -5,6 +5,11 @@ body {
     padding: 0;
 }
 
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
 header {
     background-color: #fff;
     padding: 20px 5%;
