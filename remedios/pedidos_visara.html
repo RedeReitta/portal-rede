@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Collagen Vitta | Rede Revitta</title>
+  <title>Visara | Rede Revitta</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -18,6 +18,15 @@
     body.fade-out {
       opacity: 0;
       transition: opacity 0.5s ease-out;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
     }
 
     .revitta-header {
@@ -51,15 +60,6 @@
 
     .revitta-header .voltar:hover {
       background-color: rgba(255, 255, 255, 0.2);
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 40px 20px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
     }
 
     .image-box {
@@ -226,14 +226,14 @@
 
   <div class="container">
     <div class="image-box">
-      <img src="../assets/img/colagenvitta.png" alt="Collagen Vitta Rede Revitta">
+      <img src="../assets/img/visara.png" alt="Visara Rede Revitta">
     </div>
 
     <div class="info-box">
-      <h2>Collagen Vitta 100ml - Saúde da Pele, Cabelos e Unhas</h2>
-      <div class="old-price">R$ 199,90</div>
-      <div class="price">R$ 144,90</div>
-      <div class="installments">ou 3x de R$ 48,30 sem juros</div>
+      <h2>Visara 100ml - Saúde dos Olhos e Visão Turbinada</h2>
+      <div class="old-price">R$ 189,90</div>
+      <div class="price">R$ 139,90</div>
+      <div class="installments">ou 3x de R$ 46,63 sem juros</div>
 
       <div class="buttons">
         <button class="buy">Adicionar</button>
@@ -247,39 +247,38 @@
   <!-- Descrição -->
   <div class="section">
     <h3>Descrição</h3>
-    <p>Collagen Vitta é um suplemento à base de colágeno hidrolisado, vitaminas e minerais essenciais para promover
-      firmeza, elasticidade e vitalidade à pele, além de fortalecer cabelos e unhas.</p>
+    <p>Visara é um suplemento natural que contribui para a saúde dos olhos, com vitaminas e ativos que ajudam a proteger
+      a visão contra agressões externas e o envelhecimento precoce.</p>
   </div>
 
   <!-- Para que serve -->
   <div class="section">
-    <h3>Para que serve o Collagen Vitta?</h3>
-    <p>Ele atua diretamente na saúde da pele, auxiliando na prevenção de rugas, celulites e flacidez. Também melhora a
-      estrutura dos cabelos e fortalece as unhas frágeis.</p>
+    <h3>Para que serve o Visara?</h3>
+    <p>Visara é ideal para quem sofre com vista cansada, trabalha muitas horas diante de telas ou deseja melhorar a
+      nitidez da visão. Rico em antioxidantes e nutrientes como luteína e zeaxantina.</p>
   </div>
 
   <!-- Modo de uso -->
   <div class="section">
     <h3>Modo de uso</h3>
-    <p>Ingerir 10ml ao dia, preferencialmente em jejum, puro ou diluído em água, ou conforme orientação profissional.
-    </p>
+    <p>Ingerir 10ml ao dia, de preferência pela manhã, ou conforme orientação profissional.</p>
   </div>
 
   <!-- Precauções -->
   <div class="section">
     <h3>Precauções</h3>
-    <p>Não é recomendado para menores de 18 anos, gestantes ou lactantes sem orientação médica. Consulte um profissional
-      de saúde antes de iniciar o uso.</p>
+    <p>Produto não indicado para gestantes, lactantes e crianças. Em caso de condições médicas, consulte seu
+      profissional de saúde.</p>
   </div>
 
   <!-- Ficha técnica -->
   <div class="section">
     <h3>Ficha técnica</h3>
     <ul>
-      <li><strong>Nome:</strong> Collagen Vitta</li>
+      <li><strong>Nome:</strong> Visara</li>
       <li><strong>Marca:</strong> Rede Revitta</li>
       <li><strong>Volume:</strong> 100ml</li>
-      <li><strong>Categoria:</strong> Suplemento de Colágeno</li>
+      <li><strong>Categoria:</strong> Suplemento para saúde ocular</li>
       <li><strong>Registro:</strong> Produto autorizado pela ANVISA</li>
     </ul>
   </div>
@@ -287,11 +286,11 @@
   <div id="modal" class="modal">
     <div class="modal-content">
       <h3>Escolha a quantidade</h3>
-      <button onclick="window.location.href='https://app.monetizze.com.br/r/AEF25195217?u=c&pl=YY284703'">1
+      <button onclick="window.location.href='https://app.monetizze.com.br/r/AMJ25181275?u=c&pl=BS319703'">1
         Pote</button>
-      <button onclick="window.location.href='https://app.monetizze.com.br/r/AEF25195217?u=c&pl=PB284705'">2
+      <button onclick="window.location.href='https://app.monetizze.com.br/r/AMJ25181275?u=c&pl=GB319704'">2
         Potes</button>
-      <button onclick="window.location.href='https://app.monetizze.com.br/r/AEF25195217?u=c&pl=WV284708'">5
+      <button onclick="window.location.href='https://app.monetizze.com.br/r/AMJ25181275?u=c&pl=DU319705'">3
         Potes</button>
     </div>
   </div>
@@ -310,6 +309,7 @@
         modal.style.display = "none";
       }
     });
+
     // Seleciona todos os botões com link
     document.querySelectorAll("a").forEach(link => {
         link.addEventListener("click", function (e) {
@@ -328,7 +328,7 @@
         });
     });
   </script>
-</body>
 
+</body>
 
 </html>
