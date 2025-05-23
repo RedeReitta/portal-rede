@@ -212,6 +212,51 @@
     .modal-content button:hover {
       background-color: #246a43;
     }
+
+    .profit-highlight {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .profit-card.destaque {
+      background: linear-gradient(145deg, #e9fdf2, #d6f5e2);
+      border: 2px solid #2e7d4f;
+      border-radius: 16px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out;
+      text-align: center;
+    }
+
+    .profit-card.destaque:hover {
+      transform: scale(1.05);
+    }
+
+    .profit-card .topo {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      background: #2e7d4f;
+      padding: 8px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .profit-card p {
+      margin: 8px 0;
+      font-size: 16px;
+    }
+
+    .profit-card .lucro {
+      font-size: 18px;
+      color: #0e5d14;
+      font-weight: bold;
+      margin-top: 10px;
+    }
   </style>
 </head>
 
@@ -231,18 +276,43 @@
 
     <div class="info-box">
       <h2>Collagen Vitta 100ml - Saúde da Pele, Cabelos e Unhas</h2>
-      <div class="old-price">R$ 199,90</div>
+      <!-- <div class="old-price">R$ 199,90</div>
       <div class="price">R$ 144,90</div>
-      <div class="installments">ou 3x de R$ 48,30 sem juros</div>
+      <div class="installments">ou 3x de R$ 48,30 sem juros</div> -->
 
       <div class="buttons">
         <button class="buy">Adicionar</button>
       </div>
 
       <p><strong>Estoque disponível</strong> — envio imediato 🚚</p>
-      <p><strong>Revendedor oficial Rede Revitta</strong></p>
+      <p><strong>Revendedor Rede Revitta</strong></p>
     </div>
   </div>
+
+  <div class="section">
+    <h3 style="text-align: center;">💰 Lucro por Quantidade (Revendedor)</h3>
+    <div class="profit-highlight">
+      <div class="profit-card destaque">
+        <div class="topo">1 Unidade</div>
+        <p>🛒 <strong>Pague:</strong> R$ 141,30</p>
+        <p>💵 <strong>Revenda:</strong> R$ 169,90</p>
+        <p class="lucro">📈 <strong>Lucro:</strong> R$ 28,60</p>
+      </div>
+      <div class="profit-card destaque">
+        <div class="topo">2 Unidades</div>
+        <p>🛒 <strong>Pague (cada):</strong> R$ 102,15</p>
+        <p>💵 <strong>Revenda:</strong> R$ 169,90</p>
+        <p class="lucro">📈 <strong>Lucro:</strong> R$ 67,75</p>
+      </div>
+      <div class="profit-card destaque">
+        <div class="topo">5 Unidades</div>
+        <p>🛒 <strong>Pague (cada):</strong> R$ 85,86</p>
+        <p>💵 <strong>Revenda:</strong> R$ 169,90</p>
+        <p class="lucro">📈 <strong>Lucro:</strong> R$ 84,04</p>
+      </div>
+    </div>
+  </div>
+  
 
   <!-- Descrição -->
   <div class="section">

@@ -212,6 +212,51 @@
     .modal-content button:hover {
       background-color: #246a43;
     }
+
+    .profit-highlight {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .profit-card.destaque {
+      background: linear-gradient(145deg, #e9fdf2, #d6f5e2);
+      border: 2px solid #2e7d4f;
+      border-radius: 16px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out;
+      text-align: center;
+    }
+
+    .profit-card.destaque:hover {
+      transform: scale(1.05);
+    }
+
+    .profit-card .topo {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      background: #2e7d4f;
+      padding: 8px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .profit-card p {
+      margin: 8px 0;
+      font-size: 16px;
+    }
+
+    .profit-card .lucro {
+      font-size: 18px;
+      color: #0e5d14;
+      font-weight: bold;
+      margin-top: 10px;
+    }
   </style>
 </head>
 
@@ -231,16 +276,41 @@
 
     <div class="info-box">
       <h2>OzenVitta 100ml - Detox Natural</h2>
-      <div class="old-price">R$ 239,90</div>
+      <!-- <div class="old-price">R$ 239,90</div>
       <div class="price">R$ 174,42</div>
-      <div class="installments">ou 3x de R$ 58,14 sem juros</div>
+      <div class="installments">ou 3x de R$ 58,14 sem juros</div> -->
 
       <div class="buttons">
         <button class="buy">Adicionar</button>
       </div>
 
       <p><strong>Estoque disponível</strong> — envio imediato 🚚</p>
-      <p><strong>Revendedor oficial Rede Revitta</strong></p>
+      <p><strong>Revendedor Rede Revitta</strong></p>
+    </div>
+  </div>
+
+  <!-- Lucro por Quantidade - Destaque para Revendedores -->
+  <div class="section">
+    <h3 style="text-align: center;">💰 Lucro por Quantidade (Revendedor)</h3>
+    <div class="profit-highlight">
+      <div class="profit-card destaque">
+        <div class="topo">1 Pote</div>
+        <p>🛒 <strong>Pague:</strong> R$ 147,00</p>
+        <p>💵 <strong>Revenda:</strong> R$ 169,90</p>
+        <p class="lucro">📈 <strong>Lucro:</strong> R$ 22,90</p>
+      </div>
+      <div class="profit-card destaque">
+        <div class="topo">3 Potes</div>
+        <p>🛒 <strong>Pague (cada):</strong> R$ 65,66</p>
+        <p>💵 <strong>Revenda:</strong> R$ 169,90</p>
+        <p class="lucro">📈 <strong>Lucro:</strong> R$ 104,24</p>
+      </div>
+      <div class="profit-card destaque">
+        <div class="topo">5 Potes</div>
+        <p>🛒 <strong>Pague (cada):</strong> R$ 49,40</p>
+        <p>💵 <strong>Revenda:</strong> R$ 169,90</p>
+        <p class="lucro">📈 <strong>Lucro:</strong> R$ 120,50</p>
+      </div>
     </div>
   </div>
 
@@ -249,6 +319,7 @@
     <h3>Descrição</h3>
     <p>Mantenha sob refrigeração. Uso pessoal. Não aceitamos devolução por motivos de higiene.</p>
   </div>
+
 
   <!-- Para que serve -->
   <div class="section">
@@ -313,20 +384,20 @@
 
     // Seleciona todos os botões com link
     document.querySelectorAll("a").forEach(link => {
-        link.addEventListener("click", function (e) {
-            // Evita a navegação imediata
-            e.preventDefault();
+      link.addEventListener("click", function (e) {
+        // Evita a navegação imediata
+        e.preventDefault();
 
-            const url = this.href;
+        const url = this.href;
 
-            // Adiciona classe de fade-out
-            document.body.classList.add("fade-out");
+        // Adiciona classe de fade-out
+        document.body.classList.add("fade-out");
 
-            // Espera a transição e redireciona
-            setTimeout(() => {
-                window.location.href = url;
-            }, 500); // tempo igual ao do transition no CSS
-        });
+        // Espera a transição e redireciona
+        setTimeout(() => {
+          window.location.href = url;
+        }, 500); // tempo igual ao do transition no CSS
+      });
     });
   </script>
 

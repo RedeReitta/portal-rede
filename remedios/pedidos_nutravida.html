@@ -212,6 +212,51 @@
     .modal-content button:hover {
       background-color: #246a43;
     }
+
+    .profit-highlight {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .profit-card.destaque {
+      background: linear-gradient(145deg, #e9fdf2, #d6f5e2);
+      border: 2px solid #2e7d4f;
+      border-radius: 16px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out;
+      text-align: center;
+    }
+
+    .profit-card.destaque:hover {
+      transform: scale(1.05);
+    }
+
+    .profit-card .topo {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      background: #2e7d4f;
+      padding: 8px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .profit-card p {
+      margin: 8px 0;
+      font-size: 16px;
+    }
+
+    .profit-card .lucro {
+      font-size: 18px;
+      color: #0e5d14;
+      font-weight: bold;
+      margin-top: 10px;
+    }
   </style>
 </head>
 
@@ -231,18 +276,67 @@
 
     <div class="info-box">
       <h2>NutraVida 100ml – Suplemento Multivitamínico Natural</h2>
-      <div class="old-price">R$ 179,90</div>
+      <!-- <div class="old-price">R$ 179,90</div>
       <div class="price">R$ 129,90</div>
-      <div class="installments">ou 3x de R$ 43,30 sem juros</div>
+      <div class="installments">ou 3x de R$ 43,30 sem juros</div> -->
 
       <div class="buttons">
         <button class="buy">Adicionar</button>
       </div>
 
       <p><strong>Estoque disponível</strong> — envio imediato 🚚</p>
-      <p><strong>Revendedor oficial Rede Revitta</strong></p>
+      <p><strong>Revendedor Rede Revitta</strong></p>
     </div>
   </div>
+
+  <div class="section">
+    <h3 style="text-align: center;">💰 Lucro por Quantidade (Revendedor)</h3>
+    <div class="profit-highlight">
+      <div class="profit-card destaque">
+        <div class="topo">1 Unidade</div>
+        <p>🛒 <strong>Pague:</strong> R$ 197,00</p>
+        <p>💵 <strong>Revenda:</strong> R$ 229,90</p>
+        <p class="lucro">📈 <strong>Lucro:</strong> R$ 32,90</p>
+      </div>
+      <div class="profit-card destaque">
+        <div class="topo">2 Unidades</div>
+        <p>🛒 <strong>Pague (cada):</strong> R$ 98,50</p>
+        <p>💵 <strong>Revenda:</strong> R$ 229,90</p>
+        <p class="lucro">📈 <strong>Lucro:</strong> R$ 131,40</p>
+      </div>
+      <div class="profit-card destaque">
+        <div class="topo">3 Unidades</div>
+        <p>🛒 <strong>Pague (cada):</strong> R$ 82,33</p>
+        <p>💵 <strong>Revenda:</strong> R$ 229,90</p>
+        <p class="lucro">📈 <strong>Lucro:</strong> R$ 147,56</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3 style="text-align: center;">💰 Lucro por Quantidade (Revendedor)</h3>
+    <div class="profit-highlight">
+      <div class="profit-card destaque">
+        <div class="topo">1 Unidade</div>
+        <p>🛒 <strong>Pague:</strong> R$ 197,00</p>
+        <p>💵 <strong>Revenda:</strong> R$ 229,90</p>
+        <p class="lucro">📈 <strong>Lucro:</strong> R$ 32,90</p>
+      </div>
+      <div class="profit-card destaque">
+        <div class="topo">2 Unidades</div>
+        <p>🛒 <strong>Pague (cada):</strong> R$ 98,50</p>
+        <p>💵 <strong>Revenda:</strong> R$ 229,90</p>
+        <p class="lucro">📈 <strong>Lucro:</strong> R$ 131,40</p>
+      </div>
+      <div class="profit-card destaque">
+        <div class="topo">3 Unidades</div>
+        <p>🛒 <strong>Pague (cada):</strong> R$ 82,33</p>
+        <p>💵 <strong>Revenda:</strong> R$ 229,90</p>
+        <p class="lucro">📈 <strong>Lucro:</strong> R$ 147,56</p>
+      </div>
+    </div>
+  </div>
+  
 
   <!-- Descrição -->
   <div class="section">
