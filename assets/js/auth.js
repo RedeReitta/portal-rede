@@ -7,7 +7,7 @@ const form = document.getElementById('loginForm');
     const usuario = document.getElementById('usuario').value;
     const senha = document.getElementById('senha').value;
 
-    if (usuario === 'admin' && senha === '123456') {
+    if (usuario === 'admin' && senha === '2244') {
       mensagem.style.color = 'green';
       mensagem.textContent = 'Log in realizado com sucesso!';
       // Aqui você pode redirecionar para outra página simulando:
